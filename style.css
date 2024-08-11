@@ -1,0 +1,1258 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background: white;
+     
+}
+
+
+.container{
+  position: relative;
+}
+
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    isolation: isolate;
+    height: 10vh;
+    width: 100%;
+    background: rgb(30, 27, 27);
+    padding: 3vw 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.logo h4{
+    font-size: 3rem;
+    font-weight: 400;
+    color:crimson;
+}
+
+.logo span{
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+}
+
+.nav-part1{
+   display: flex;
+    align-items: center;
+    gap: 2vw;
+    position: absolute;
+    right: 2vw;
+    
+  
+}    
+ 
+.nav-item a{
+    font-size: 1.5rem;
+      color:rgba(247, 43, 84, 0.64);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-item a:hover{
+    color: white;
+}
+
+.main{
+    min-height: 80vh;
+    width: 94%;
+    margin: 8vw 3vw;
+    border-radius: 10px;
+        background: url('https://t3.ftcdn.net/jpg/07/52/18/54/360_F_752185447_5XzzTyOT2qZSAnPldGHiX3kP5qYNZdBn.jpg');
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center center;
+
+      display: flex;
+      align-items: center;
+      font-family: 'Times New Roman', Times, serif;
+
+}
+
+.main-part1{
+
+   width: 50%;
+    padding: 1vw 2vw;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+   
+}
+
+
+.main-part1 h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 3.8rem;
+    color:crimson; 
+    
+}
+
+.main-part1 p{
+  width: 70%;
+    font-size: 1.4rem;
+    font-weight: 700;
+   color: rgb(44, 44, 44);
+    margin-top: 2vw;
+    line-height: 1.5rem;
+}
+
+
+.main-part1-button{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    margin-top:2vw ;
+}
+
+
+.main-part1-button h3{
+    padding: 0.5rem 0rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    background-color:crimson;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.main-part1-button h3 a{
+     padding:1rem 1rem;
+      z-index: 19;
+      color: white;
+     text-decoration: none;    
+     position: relative;
+}
+
+.main-part1-button h3::after{
+    content: " ";
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    border-radius: 5px;
+    transition: all ease 0.4s;
+}
+
+.main-part1-button h3:hover::after{
+    bottom: 0;
+    transition: all ease 0.4s;
+
+}
+
+.main-part1-button h3:hover a{
+     color: crimson ;
+}
+
+.main-part1-button h4{
+    padding: 0.5rem 0rem;
+     font-size: 1.4rem;
+     font-weight: 600;
+     background-color: white;
+     border: 2px solid crimson;
+     color: crimson;
+     border-radius: 5px;
+     position: relative;
+     overflow: hidden;
+ }
+ 
+ 
+ .main-part1-button h4 a{
+       padding:1rem 1rem;
+       z-index: 19;
+       color: crimson;
+      text-decoration: none;  
+      position: relative;  
+      
+ }
+ 
+ 
+ 
+ .main-part1-button h4::after{
+     content: " ";
+     height: 100%;
+     width: 100%;
+     background-color: crimson;
+     position: absolute;
+     bottom: -100%;
+     left: 0;
+     border-radius: 5px;
+     transition: all ease 0.4s;
+ }
+ 
+ .main-part1-button h4:hover::after{
+     bottom: 0;
+     transition: all ease 0.4s;
+ 
+ }
+ 
+ .main-part1-button h4:hover a{
+      color: white ;
+ }
+
+
+  .page2{
+    width: 100%;
+  }
+
+   .trending{
+    width: 100%;
+    padding: 1vw 4vw ;
+   }
+
+  .trending-sec{
+    height: 1px;
+    width: 100%;
+    margin: 3vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+ }
+ 
+ .div{
+     height: 1.1px;
+     width: 15%;
+     margin: 25px 0;
+     background:#1f1c1c;
+     
+ }
+
+ .trending-sec h3{
+    color: #000;
+    font-size: 2.8rem;
+    font-weight: 600;
+ }
+
+ .trending-products{
+    width: 100%;
+    gap: 1.5vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    padding: 2rem 0.5rem;
+ }
+
+
+ .trending-pic{
+    height:27vw;
+    width: 18vw; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    background-color: white;
+    border: 1px solid white;
+    box-shadow: 0 0 15px #000;
+    margin: 1vw;
+    position: relative;
+ }
+
+ 
+
+.trending-pic:hover{
+    border: 5px solid crimson;
+}
+
+.trending-pic h4{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #000;
+    padding: 1vw 1vw;
+}
+
+.trending-pic:hover .like{
+    display: flex;
+    background-color:crimson;
+}
+
+
+
+ .like{
+    height:27vw;
+    width: 18vw;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 1vw 1vw;
+    display: none;
+ }
+
+
+ .trending-pic button {
+    padding: 1vw 1.5vw;
+    font-size: 3rem;
+    background-color:white;
+    color: black;
+    font-size: 1vw;
+    font-weight: 600;
+    border-radius: 50px;
+    border: none;
+
+}
+
+ .trending-pic button:hover{
+    scale: 1;
+ }
+
+ .trending-pic i{
+    font-size: 1.5rem;
+    color: white;
+
+ }
+
+ .trending-pic img{
+    height: 17vw;
+    width: 17vw;
+    padding: 2vw 3vw;
+   
+ }
+
+
+
+.checkout{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(231, 110, 128);
+    margin: 7vw 2vw;
+    border-radius: 10px;
+}
+
+.checkout-sec{
+    padding-top:1vw;
+}
+
+.checkout-sec h3{
+    font-size: 2.5vw;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.919);
+}
+
+.cardsec{
+    height: 100%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    margin: 0vw 2vw;
+    
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 20vw;
+     height: 18vw;
+    perspective: 1000px;
+    margin: 1vw 1vw;
+  }
+
+  .flip-card h4{
+       font-size: 1.3vw;
+       color: black;
+       font-weight: 400;
+       margin-top: 1vw;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+
+  .flip-card-front {
+    color: black;
+  }
+
+  .flip-card img{
+    height: 90%;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+
+  .bestoffer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    margin: 10vw 2vw;
+    gap: 8vw;
+  }
+   
+  .bestoffer-products{
+    flex-basis: 55%;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+
+  }
+
+  .bestoffer-img1{
+    height: 20vw;
+    width: 20vw;
+    padding: 1rem 1rem;
+    background-color: lightpink;
+    border-radius: 5px;
+  }
+   
+   .bestoffer-img1 img{
+    height: 95%;
+    width: 95%;
+   
+  }
+
+
+  .bestoffer-img2{
+    height: 30vw;
+    width: 30vw;
+    padding: 1.4rem 1.4rem;
+    background-color: lightpink;
+    border-radius: 5px;
+
+  }
+
+  .bestoffer-img2 img{
+    height: 95%;
+    width: 95%;
+
+  }
+  
+  .bestoffer-img1 img:hover{
+    scale: 1.1;
+  }
+  .bestoffer-img2 img:hover{
+    scale: 1.1;
+  }
+
+
+  .bestoffer-content{
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+      gap: 2vw;
+  }
+  
+  .bestoffer-heading h1{
+    font-size: 4vw;
+    font-weight: 500;
+    color: #000;
+  }
+
+  .bestoffer-heading p{
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: rgb(233, 107, 132);
+  }
+
+  .bestoffer-para{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+
+  .bestoffer-para h2{
+    font-size: 1.7vw;
+    font-weight: 600;
+    color: #000;
+  }
+
+  .bestoffer-para p{
+    font-size: 1.2vw;
+    width: 50%;
+    font-weight: 400;
+    color: crimson;
+  }
+
+ .page3{
+    padding: 5vw 0;
+    position: relative;
+    
+ }
+
+.about{
+    width: 100%;
+    padding: 1vw 4vw;
+}
+
+.about h2{
+    display: flex;
+    gap: 1rem;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: black;
+}
+
+.about h2 i{
+    font-size: 3rem;
+    font-weight: 700;
+    color: crimson;
+    filter: blur(5px);
+}
+
+.aboutus{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutus-content{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5vw;
+}
+
+.aboutus-para{
+    width: 90%;
+   display: flex;
+   flex-direction: column;
+   gap: 1vw;
+}
+
+.aboutus-para h1{
+    font-size: 3rem;
+    font-weight: 800;
+    color: crimson;
+    
+}
+
+.aboutus-para h4{
+   font-size: 1.5rem;
+   font-weight: 600;
+   color: #000;
+}
+
+.aboutus-para p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgb(243, 93, 115);
+}
+
+.aboutus-img img{
+    height: 30vw;
+    width: 30vw;
+    border: 4px solid crimson;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 10px;
+}
+
+.aboutus-img img:hover{
+  scale:1.1;
+}
+
+.review{
+    padding: 3vw 2vw;
+    margin: 7vw 1vw;
+    
+}
+
+.review h2{
+    display: flex;
+    gap: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.review h2 .icon{
+    font-size: 3rem;
+    font-weight: 700;
+    color: crimson;
+}
+
+.review i{
+    font-size: 7rem;
+    font-weight: 700;
+    color: crimson;
+    filter: blur(5px);
+    text-align: left;
+}
+
+.reviewsec{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1vw 3vw;
+}
+
+.reviews{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2vw 1vw;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #000;
+}
+
+.reviews:hover{
+    scale: 1.1;
+}
+
+.reviews img{
+    border-radius: 50%;
+    height: 25%;
+    width: 25%;
+}
+
+.reviews p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    /* color: white; */
+    color: #282727d0;
+    text-align: center;
+}
+
+.rating i{
+    font-size: 1.5rem;
+    font-weight: 200;
+    filter: none;
+}
+
+.page4{
+    width: 100%;
+    background-color: rgb(231, 110, 128);
+    border: 1px solid white;
+    padding: 2vw 3vw;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-header{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000;
+}
+  
+  .contact form {
+    margin-block: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .contact input {
+    flex: 1;
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+  }
+  
+  .contact form .btn {
+    padding: 0.50rem 1rem;
+    border-radius: 5px;
+    background-color:crimson;
+    color:white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    flex: 1;
+    justify-content: center;
+    border: 2px solid white;
+  }
+
+  .contact form .btn:active{
+    background-color:white;
+    color:crimson;
+    scale: 1;
+  }
+
+  .social{
+    width: 20%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+  }
+
+   .social a{
+    padding: 2px 2px;
+    font-size: 2.5rem;
+    color: white ;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+   
+   }
+
+   .copyright p{
+    font-size: 1rem;
+    font-weight: 200;
+    color: black;
+   }
+
+
+   .menu i{
+    font-size: 2rem;
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    display: none;
+
+   }
+
+   .mobile-nav{
+    height: 100vh;
+    width: 100%;
+    padding: 2vw 5vw;
+    background: #000000ab;
+    position: fixed;
+    z-index: 99;
+    top: -100%;
+    transition: all ease 0.8s;
+   }
+
+   .mobile-nav-items{
+     height: 50%;
+     width: 100%;
+     background: crimson;
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 4vw;
+   }
+
+   .nav-item-sm a{
+    font-size: 1.5rem;
+      color:white;
+    cursor: pointer;
+    text-decoration: none;
+   }
+
+   .nav-item-sm a:hover{
+    color: #000;
+   }
+
+
+  
+  @media(max-width:900px){
+
+    .logo h4{
+      font-size: 2rem;
+      font-weight: 400;
+      color:crimson;
+   }
+  
+    .logo span{
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: white;
+   }
+
+   .nav-item a{
+    font-size: 3vw;
+    padding: 0 1.5vw;
+}
+
+
+    .main{
+      margin-top: 12vw;
+      
+     }
+
+   .main-part1{
+    width: 80%;
+    gap: 2vw;
+  }
+
+  .trending-products{
+    grid-template-columns: repeat(3,1fr);
+  }
+ 
+  .trending-pic{
+    height: 35vw;
+    width: 25vw;
+  }
+
+  .like{
+    height: 35vw;
+    width: 25vw;
+  }
+
+  .trending-pic img{
+    height: 20vw;
+    width: 20vw;
+  }
+
+  .trending-pic button{
+    font-size: 1.5vw;
+  }
+
+  .cardsec{
+    flex-wrap: wrap;
+  }
+
+  .checkout-sec h3{
+    font-size: 3.5vw;
+   
+}
+
+.flip-card {
+    height: 25vw;
+   
+}
+
+.bestoffer{
+  flex-direction: column;
+ }
+
+ .bestoffer-img1{
+  height: 40vw;
+  width: 40vw;
+ }
+
+ .bestoffer-img2{
+  height: 50vw;
+  width: 50vw;
+ }
+
+ .bestoffer-content{
+  gap: 4vw;
+  margin: 0 10vw
+     
+ }
+ 
+
+ .bestoffer-heading h1{
+  font-size: 10vw;
+  
+
+}
+
+.bestoffer-heading p{
+  font-size: 1.4rem;
+ 
+}
+
+
+.bestoffer-para h2{
+  font-size: 1.4rem;
+  
+}
+
+.bestoffer-para p{
+  font-size: 1.2rem;
+
+}
+
+.aboutus-img img{
+    height: 35vw;
+    width: 35vw;
+}
+
+.reviews{
+    width: 28%;
+}
+  }
+
+  @media(max-width:700px){
+
+    .main{
+      margin-top: 15vw;
+      gap: 3vw;
+     }
+
+    .main-part1{
+     width: 90%;
+   }
+
+   .main-part1 h1{
+    font-size: 3rem;
+}
+
+.main-part1 p{
+    font-size: 1.2rem;
+
+}
+
+.nav-part1{
+  display: none;
+
+}
+
+.menu i{
+  display: block;
+}
+
+.trending-sec h3{
+    font-size: 2rem;
+ }
+
+ 
+   .trending-products{
+     grid-template-columns: repeat(2,1fr);
+   }
+  
+   .trending-pic{
+     height: 50vw;
+     width: 35vw;
+   }
+ 
+   .like{
+     height: 30vw;
+     width: 35vw;
+   }
+ 
+   .trending-pic img{
+     height: 40vw;
+     width: 20vw;
+   }
+ 
+   .trending-pic button{
+     font-size: 3vw;
+   }
+ 
+   .checkout{
+    padding-top: 4vw ;
+   }
+
+   .cardsec{
+     flex-wrap: wrap;
+   }
+ 
+   .checkout-sec h3{
+     font-size: 4vw;
+    
+ }
+ 
+ .flip-card {
+  margin: 2vw 2.4vw;
+     height: 45vw;
+     width: 40vw;
+    
+ }
+
+
+ .aboutus{
+    flex-direction: column;
+    gap: 5vw;
+ }
+ 
+ .aboutus-content{
+    width: 90%;
+    margin-top: 5vw;
+}
+
+ .aboutus-img img{
+     height: 55vw;
+     width: 55vw;
+ }
+
+ .review{
+  margin-top: 4vw;
+ }
+
+ .reviewsec{
+  margin-top: 4vw;
+    flex-wrap: wrap;
+    gap: 4vw;
+ }
+ 
+ .reviews{
+     width:38%;
+ }
+   }
+ 
+   @media(max-width:500px){
+
+    .logo h4{
+      font-size: 2rem;
+      font-weight: 400;
+      color:crimson;
+   }
+  
+    .logo span{
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: white;
+   }
+  
+   .main{
+    display: block;
+    margin-top: 25vw;
+   }
+
+    .main-part1{
+      width: 100%; 
+     padding: 4rem 1rem;
+      text-align: left;
+      gap: 5vw;
+    }
+   
+   .main-part1 h1{
+    padding: 0 1rem;
+    width: 100%;
+    font-size:2.3rem;
+    font-weight: 1000;
+   
+}
+
+.main-part1 p{
+  width: 100%;
+    padding: 0 1rem;
+    font-size: 4.5vw;
+  
+}
+
+.main-part1-button{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+  margin-top:2vw ;
+}
+
+.main-part1-button h3 a{
+  padding:1rem 1.2rem;
+  font-size: 1.2rem;
+   z-index: 19;
+   color: white;
+  text-decoration: none;    
+  position: relative;
+}
+
+.main-part1-button h4 a{
+  padding:1rem 1.2rem;
+  font-size: 1.3rem;
+   z-index: 19;
+   color: crimson;
+  text-decoration: none;    
+  position: relative;
+}
+
+.trending-sec h3{
+    font-size: 8vw;
+ }
+
+ .div{
+  height: 1px;
+  width: 10%;
+  margin: 25px 0;
+  background:#1f1c1c;
+}
+
+ 
+   .trending-products{
+     grid-template-columns: repeat(1,1fr);
+     padding: 10vw 18vw;
+   }
+  
+   .trending-pic{
+     height: 75vw;
+     width: 55vw;
+
+   }
+ 
+   .like{
+     height: 60vw;
+     width: 55vw;
+   }
+ 
+   .trending-pic img{
+     height: 50vw;
+     width: 40vw;
+   }
+ 
+   .trending-pic button{
+     font-size: 4vw;
+     padding: 1.2vw 1.6vw;
+     font-weight: 400;
+   }
+ 
+   .cardsec{
+     flex-wrap: wrap;
+     margin: 10vw;
+     gap: 2vw;
+
+   }
+ 
+   .checkout{
+    padding-top: 4vw ;
+   }
+
+   .checkout-sec h3{
+     font-size: 6vw;
+    
+ }
+ 
+ .flip-card {
+    margin: 0 10vw;
+     height: 65vw;
+     width: 55vw;
+    
+ }
+
+ .bestoffer{
+  flex-direction: column;
+ }
+
+ .bestoffer-products{
+  flex-direction: column;
+  gap: 8vw;
+ }
+
+ .bestoffer-img1{
+  height: 60vw;
+  width: 60vw;
+ }
+
+ .bestoffer-img2{
+  height: 70vw;
+  width: 70vw;
+ }
+
+ .bestoffer-content{
+  gap: 4vw;
+  margin: 0 10vw
+     
+ }
+ 
+
+ .bestoffer-heading h1{
+  font-size: 10vw;
+  font-weight: 500;
+  color: #000;
+
+}
+
+.bestoffer-heading p{
+  font-size: 1.4rem;
+ 
+}
+
+
+.bestoffer-para h2{
+  font-size: 1.4rem;
+  font-weight: 300;
+  
+}
+
+.bestoffer-para p{
+  font-size: 1.2rem;
+  width: 80%;
+  
+}
+
+ 
+
+ .aboutus{
+    flex-direction: column;
+    gap: 5vw;
+ }
+ 
+ .aboutus-content{
+    width: 90%;
+    margin-top: 5vw;
+}
+
+ .aboutus-img img{
+     height: 65vw;
+     width: 65vw;
+ }
+
+ .reviewsec{
+  flex-direction: column;
+  gap: 4vw;
+ }
+ 
+ .reviews{
+   width: 78%;
+ }
+
+ .contact form {
+  flex-direction: column;
+ 
+}
+
+.contact form .btn {
+  padding: 0.50rem 2rem;
+}
+
+    .social{
+      width: 100%;
+      gap: 1vw;
+      justify-content: center;
+    }
+   
+    .copyright p{
+      font-size: 0.75rem;
+     }
+  
+  
+    }
+ 
+ 
+
+   
+
+   
